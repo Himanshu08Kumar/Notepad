@@ -27,8 +27,22 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="110dp"
-        android:fontFamily="@font/love"
-        android:text="Keep it Safe"
+        android:fontFamily="@font/can"
+        android:text="Access From Any Where"
         android:textColor="#bf0603"
-        android:textSize="45sp" />
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/techno"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginLeft="-10dp"
+        android:text="-@Himanshu"
+        android:textColor="#bf0603"
+        android:textSize="15sp" />
 </RelativeLayout>

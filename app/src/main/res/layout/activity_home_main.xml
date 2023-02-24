@@ -32,7 +32,8 @@
             android:layout_centerVertical="true"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_baseline_menu_24"
-            app:tint="#fff" />
+            app:tint="#fff"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
     </RelativeLayout>
@@ -51,6 +52,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_baseline_add_24"
-        app:backgroundTint="#bf0603" />
+        app:backgroundTint="#bf0603"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </RelativeLayout>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -7,6 +9,17 @@
     android:layout_marginVertical="8dp"
     android:background="@drawable/bg"
     android:backgroundTint="#cce3de">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Search Here..."
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -16,25 +29,30 @@
         android:textColor="#000"
         android:textSize="18sp"
         android:layout_marginVertical="4dp"
-        />
+        tools:ignore="HardcodedText" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/notes_content_text_view"
-        android:text="This can be note content that can be long"
-        android:maxLines="2"
-        android:ellipsize="end"
-        android:textSize="17sp"
-        android:layout_marginVertical="4dp"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="This can be note content that can be long"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
         android:id="@+id/notes_timestamp_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:gravity="right"
         android:text="Timestamp"
         android:textSize="12sp"
-        android:gravity="right"
-        android:layout_marginVertical="4dp"
-        />
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+
+
 
 </LinearLayout>
